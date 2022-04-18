@@ -1,2 +1,4 @@
 # portfolio
-Personal Website
+Personal Website using
+* Angular
+* SCSS
