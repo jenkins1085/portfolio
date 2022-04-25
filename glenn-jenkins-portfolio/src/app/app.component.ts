@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   template: `
-    Glenn Jenkins Portfolio 
+    <app-header></app-header>
     <router-outlet></router-outlet>
+    <app-footer></app-footer>
   `,
-  styles: []
+  styles: [],
 })
 export class AppComponent {
-  title = 'glenn-jenkins-portfolio';
+  title = "glenn-jenkins-portfolio";
 }
