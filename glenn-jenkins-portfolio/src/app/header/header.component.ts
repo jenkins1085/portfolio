@@ -6,14 +6,14 @@ import { Component, OnInit } from "@angular/core";
     <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
       <div id="navbarBasicExample" class="navbar-end">
         <div class="navbar-start">
-          <a class="navbar-item"> Home </a>
-          <a class="navbar-item"> About </a>
-          <a class="navbar-item"> Hobbies </a>
+          <a class="navbar-item" routerLink="/"> Home </a>
+          <a class="navbar-item" routerLink="/about"> About </a>
+          <a class="navbar-item" routerLink="/hobbies"> Hobbies </a>
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link"> Projects </a>
             <div class="navbar-dropdown">
-              <a class="navbar-item"> Software </a>
-              <a class="navbar-item"> Design </a>
+              <a class="navbar-item" routerLink="/software-projects"> Software </a>
+              <a class="navbar-item" routerLink="/design-projects"> Design </a>
             </div>
           </div>
         </div>
