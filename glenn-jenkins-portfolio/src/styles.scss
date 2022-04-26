@@ -2,11 +2,16 @@
 $teal: #00FFCC;
 $black: #1F1F1F;
 
+/* for header and footer */
+$timing        : .275s;
+$themeColor     : #00FFCC;
+$accent        : #00F0F0;
+
 /* header - home, about, hobbies, projects */
 header {
     @mixin navbar-links() {
         font-size: 20px;
-        color: $teal;
+        color: $themeColor;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -42,21 +47,21 @@ header {
       
       a:hover, .dropdown:hover .dropbtn {
         color: $black;
-        background-color: $teal;
+        background-color: $themeColor;
+        transition: all $timing ease-out;
       }
       
       .dropdown-content {
         display: none;
         position: absolute;
         background-color: $black;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        min-width: 100px;
         z-index: 1;
       }
       
       .dropdown-content a {
         float: none;
-        color: $teal;
+        color: $themeColor;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
@@ -65,7 +70,8 @@ header {
       
       .dropdown-content a:hover {
         color: $black;
-        background-color: $teal;
+        background-color: $themeColor;
+        transition: all $timing ease-out;
       }
       
       .dropdown:hover .dropdown-content {
@@ -75,9 +81,6 @@ header {
 
 /* footer - social media logos */
 footer {
-    $timing        : .275s;
-    $iconColor     : #00FFCC;
-    $accent        : #00F0F0;
 
     @mixin transformScale($size: 1) {
         transform: scale($size);
@@ -121,7 +124,7 @@ footer {
                 height: 60px;
                 border-radius: 100%;
                 display: block;
-                background: linear-gradient(35deg, $iconColor, $accent);
+                background: linear-gradient(35deg, $themeColor, $accent);
                 transition: all $timing ease-out;
             }
             
@@ -132,8 +135,8 @@ footer {
             
             &:hover i {
                 @include transformScale(2);
-                color: $iconColor;
-                background: -webkit-linear-gradient(35deg, $iconColor, $accent);
+                color: $themeColor;
+                background: -webkit-linear-gradient(35deg, $themeColor, $accent);
                 -webkit-background-clip: text;
                 background-clip: $teal;
                 -webkit-text-fill-color: transparent;

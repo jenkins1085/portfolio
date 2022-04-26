@@ -4,7 +4,6 @@ import { Component, OnInit } from "@angular/core";
   selector: "app-header",
   template: `
   <header>
-    <div class="right">
     <a routerLink="/">Home</a>
     <a routerLink="/about">About</a>
     <a routerLink="/hobbies">Hobbies</a>
@@ -14,7 +13,6 @@ import { Component, OnInit } from "@angular/core";
         <a routerLink="/software-projects">Software</a>
         <a routerLink="/design-projects">Design</a>
       </div>
-    </div>
     </div>
 </header>
   `,
