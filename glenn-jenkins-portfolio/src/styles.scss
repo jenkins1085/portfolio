@@ -2,6 +2,13 @@
 $teal: #00FFCC;
 $black: #1F1F1F;
 
+/* images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4%;
+}
+
 /* for header and footer */
 $timing        : .275s;
 $themeColor     : #00FFCC;
